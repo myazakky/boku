@@ -1,23 +1,19 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styled from 'styled-components'
+import colors from '../styles/colors'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <h3 className={styles.title}>タイトルロゴがどーん</h3>
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title} >僕です</h1>
-      </main>
-
-      <footer className={styles.footer}>
-      <p className={styles.description}>カメラが下からグイッとパンして</p>
-      </footer>
-    </div>
+    <HomeContainer>
+    </HomeContainer>
   )
 }
+
+const HomeContainer = styled.div`
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: ${colors.background.main}
+`
 
 export default Home
