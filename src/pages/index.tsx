@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import colors from '../styles/colors'
 import Card, { CardProps } from '../components/Card'
 import Contacts from '../components/Contacts'
+import Log from '../components/Log'
 
 const accounts = [
   {
@@ -18,6 +19,13 @@ const me = {
   accounts: accounts
 }
 
+const log = [
+  {
+    date: new Date("2004-04-05"),
+    detail: "生誕"
+  }
+]
+
 const Home = () => {
   return (
     <HomeContainer>
@@ -26,6 +34,9 @@ const Home = () => {
       </Center>
       <Center>
         <Contacts accounts={accounts}></Contacts>
+      </Center>
+      <Center>
+        <Log log={log}></Log>
       </Center>
     </HomeContainer>
   )
@@ -41,6 +52,7 @@ const HomeContainer = styled.div`
 const Center = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 `
 
 export default Home
