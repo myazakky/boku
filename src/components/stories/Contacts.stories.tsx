@@ -1,5 +1,5 @@
 import React from 'react';
-import Contacts, { ContactsProps } from '../components/Contacts';
+import Contacts, { ContactsProps } from '../../components/Contacts';
 
 const config = {
   title: 'Components/Contacts',

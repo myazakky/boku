@@ -1,5 +1,5 @@
 import React from 'react';
-import Account, { AccountProps } from '../components/Account';
+import Account, { AccountProps } from '../../components/Account';
 
 const config = {
   title: 'Components/Account',
