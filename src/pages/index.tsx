@@ -1,9 +1,11 @@
+import React from 'react'
 import type { NextPage } from 'next'
 import styled from 'styled-components'
 import colors from '../styles/colors'
 import Card, { CardProps } from '../components/Card'
 import Contacts from '../components/Contacts'
 import Log from '../components/Log'
+import { createGlobalStyle } from 'styled-components'
 
 const accounts = [
   {
@@ -28,23 +30,32 @@ const log = [
 
 const Home = () => {
   return (
-    <HomeContainer>
-      <Center>
-        <Card {...me}></Card>
-      </Center>
-      <Center>
-        <Contacts accounts={accounts}></Contacts>
-      </Center>
-      <Center>
-        <Log log={log}></Log>
-      </Center>
-    </HomeContainer>
+    <React.Fragment>
+      <GlobalStyle />
+      <HomeContainer>
+        <Center>
+          <Card {...me}></Card>
+        </Center>
+        <Center>
+          <Contacts accounts={accounts}></Contacts>
+        </Center>
+        <Center>
+         <Log log={log}></Log>
+        </Center>
+      </HomeContainer>
+    </React.Fragment>
   )
 }
 
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${colors.background.main};
+    margin: 0;
+  }
+`
+
 const HomeContainer = styled.div`
   display: block;
-  height: 100vh;
   width: 100vw;
   background-color: ${colors.background.main}
 `

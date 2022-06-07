@@ -19,6 +19,7 @@ const Account = (props: AccountProps) => {
 const AccountComponent = styled.div`
   display: inline-block;
   width: 100%;
+  margin-bottom: 1em;
 `
 
 const Service = styled.p<AccountProps>`
@@ -26,7 +27,7 @@ const Service = styled.p<AccountProps>`
   color: ${colors.text.base};
   margin: 0;
   margin-right: 1em;
-  margin-top: 1em;
+  min-width: 5rem;
   &:before {
     content: '';
     display: inline-block;
@@ -35,12 +36,22 @@ const Service = styled.p<AccountProps>`
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
+    margin-right: 5px;
   }
 `
 
 const Url = styled.a`
   display: inline-block;
-  colors: ${colors.text.accent};
+  color: ${colors.text.accent};
+  text-decoration: none;
+  &:link {
+    color: ${colors.text.accent};
+    text-decoration: none;
+  }
+  &:visited {
+    color: ${colors.text.accent};
+    text-decoration: none;
+  }
 `
 
 export default Account;

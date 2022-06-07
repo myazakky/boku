@@ -34,6 +34,7 @@ const Title = styled.p`
   weight: bold;
   font-size: 2rem;
   margin: 0;
+  margin-bottom: 1rem;
   color: ${colors.text.base}
 `
 
