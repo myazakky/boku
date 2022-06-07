@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import styled from 'styled-components'
 import colors from '../styles/colors'
 import Card, { CardProps } from '../components/Card'
+import Contacts from '../components/Contacts'
 
 const accounts = [
   {
@@ -23,6 +24,9 @@ const Home = () => {
       <Center>
         <Card {...me}></Card>
       </Center>
+      <Center>
+        <Contacts accounts={accounts}></Contacts>
+      </Center>
     </HomeContainer>
   )
 }
@@ -37,7 +41,6 @@ const HomeContainer = styled.div`
 const Center = styled.div`
   display: flex;
   justify-content: center;
-  border: solid thin ${colors.background.subsub}
 `
 
 export default Home
