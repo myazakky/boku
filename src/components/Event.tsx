@@ -10,7 +10,7 @@ export type EventProps = {
 export const Event = (props: EventProps) => {
   return (
     <Content>
-      <Date>{props.date.getFullYear()}-{props.date.getMonth()}-{props.date.getDate()}</Date>
+      <Date>{props.date.getFullYear()}-{props.date.getMonth() + 1}-{props.date.getDate()}</Date>
       <Detail>{props.detail}</Detail>
     </Content>
   )
