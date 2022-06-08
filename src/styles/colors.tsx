@@ -2,13 +2,13 @@ const background = {
   main: '#152136',
   sub: '#22324e',
   subsub: '#364b6e',
-  accent: '#be9d2e'
+  accent: '#f1d061'
 
 }
 
 const text = {
   base: '#d5def1',
-  accent: '#d6b64e'
+  accent: '#f1d061'
 }
 
 const colors = {

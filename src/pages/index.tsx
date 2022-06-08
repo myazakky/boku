@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${colors.background.main};
     margin: 0;
+    border-top: solid 25px ${colors.background.accent};
   }
 `
 
