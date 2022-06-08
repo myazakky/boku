@@ -19,7 +19,7 @@ const Account = (props: AccountProps) => {
 const AccountComponent = styled.div`
   display: inline-block;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 2px;
 `
 
 const Service = styled.p<AccountProps>`

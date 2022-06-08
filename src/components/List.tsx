@@ -23,7 +23,7 @@ const Container = styled.div`
   display: inline-block;
   padding: 1rem;
   border: solid thin ${colors.background.subsub};
-  min-width: ${91 * 0.3}rem;
+  width: ${91 * 0.3}rem;
 `
 
 const Info = styled.div`
