@@ -6,27 +6,7 @@ import Card, { CardProps } from '../components/Card'
 import Contacts from '../components/Contacts'
 import Log from '../components/Log'
 import { createGlobalStyle } from 'styled-components'
-
-const accounts = [
-  {
-    service: "GitHub",
-    icon: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-    url: "https://github.com/myazakky"
-  }
-]
-
-const me = {
-  name: "Miyazaki",
-  icon: "https://cdn.discordapp.com/avatars/546617163843108864/cec1a891257dd86c0ab0b8a50076cac6.png",
-  accounts: accounts
-}
-
-const log = [
-  {
-    date: new Date("2004-04-05"),
-    detail: "生誕"
-  }
-]
+import { me, log, accounts } from '../status/status'
 
 const Home = () => {
   return (
